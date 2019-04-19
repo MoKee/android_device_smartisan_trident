@@ -101,6 +101,12 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+    bootctrl.sdm845 \
+    libcutils \
+    libgptutils \
+    libz
+
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
