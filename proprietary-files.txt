@@ -133,6 +133,20 @@ vendor/lib64/hw/audio.primary.sdm845.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libtinycompress_vendor.so
 
+# Audio - modules
+vendor/lib/modules/modules.alias
+vendor/lib/modules/modules.dep
+vendor/lib/modules/pinctrl-wcd.ko
+vendor/lib/modules/snd-soc-sdm845.ko
+vendor/lib/modules/snd-soc-wcd-mbhc.ko
+vendor/lib/modules/snd-soc-wcd-spi.ko
+vendor/lib/modules/snd-soc-wcd934x.ko
+vendor/lib/modules/snd-soc-wcd9xxx.ko
+vendor/lib/modules/snd-soc-wsa881x.ko
+vendor/lib/modules/swr-wcd-ctrl.ko
+vendor/lib/modules/wcd-core.ko
+vendor/lib/modules/wcd-dsp-glink.ko
+
 # Bluetooth (Audio)
 vendor/lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 vendor/lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
