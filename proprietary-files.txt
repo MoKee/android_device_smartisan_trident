@@ -123,16 +123,6 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio - HAL
-lib/libaudioroute.so
-lib64/libaudioroute.so
-vendor/lib/hw/audio.primary.sdm845.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libtinycompress_vendor.so
-vendor/lib64/hw/audio.primary.sdm845.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libtinycompress_vendor.so
-
 # Bluetooth (Audio)
 vendor/lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 vendor/lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
@@ -582,6 +572,8 @@ vendor/etc/logic_volume.conf
 vendor/etc/init/logic_volume.rc|beafa018e16eb11ded6f78716024bdf82b11022e
 
 # Media
+-vendor/lib/libmm-omxcore.so
+-vendor/lib64/libmm-omxcore.so
 lib/libmmosal.so
 lib/vendor.qti.hardware.vpp@1.1.so
 lib64/libmmosal.so
@@ -619,7 +611,6 @@ vendor/lib/libOmxWmaDec.so
 vendor/lib/libc2dcolorconvert.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libmm-omxcore.so
 vendor/lib/libplatformconfig.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libvpphvx.so
@@ -656,7 +647,6 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libc2dcolorconvert.so
 vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmm-omxcore.so
 vendor/lib64/libplatformconfig.so
 vendor/lib64/libstagefrighthw.so
 vendor/lib64/libvpphvx.so
