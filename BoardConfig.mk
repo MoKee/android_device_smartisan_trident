@@ -168,7 +168,7 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Treble
-# BOARD_VNDK_VERSION := current
+BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verified Boot
