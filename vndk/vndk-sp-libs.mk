@@ -31,9 +31,13 @@ VNDK_SP_LIBRARIES := \
 
 EXTRA_VENDOR_LIBRARIES := \
     android.hidl.base@1.0 \
+    com.qualcomm.qti.imscmservice@2.0 \
+    com.qualcomm.qti.uceservice@2.0 \
     vendor.display.config@1.0 \
     vendor.display.config@1.1 \
     vendor.mokee.livedisplay@2.0 \
     vendor.mokee.power@1.0 \
     vendor.mokee.touch@1.0 \
-    vendor.qti.hardware.camera.device@1.0
+    vendor.nxp.hardware.nfc@1.0 \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.latency@2.0
