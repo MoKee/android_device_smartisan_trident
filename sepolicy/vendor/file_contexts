@@ -1,3 +1,8 @@
+# Bluetooth
+/(vendor|system/vendor)/bin/bt-mac-generator	u:object_r:bt_mac_generator_exec:s0
+/data/vendor/mac_addr/bt\.mac			u:object_r:vendor_bt_data_file:s0
+/mnt/vendor/persist/bd_addr\.txt		u:object_r:persist_bluetooth_file:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.trident	u:object_r:hal_light_default_exec:s0
 
