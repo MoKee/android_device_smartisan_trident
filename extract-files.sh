@@ -50,3 +50,12 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-qc.txt "$SRC_QC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
+
+BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+# Camera
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/lib/libtt_panorama.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/camera/components/com.inv.node.eis.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/libmms_hal_vstab.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/libmms_warper_vstab.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/libuq.so
