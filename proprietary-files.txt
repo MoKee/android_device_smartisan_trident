@@ -262,6 +262,9 @@ vendor/lib/camera/components/com.qtistatic.stats.af.so
 vendor/lib/camera/components/com.qtistatic.stats.awb.so
 vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
 
+# Camera - dependencies
+lib/libui.so:vendor/lib/libuq.so
+
 # Camera - etc
 etc/GyroOffset_db.config
 etc/fsync_db.config
