@@ -219,10 +219,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/init/vendor,$(TARGET_COPY_OUT_VENDOR))
 
-# Input
-PRODUCT_PACKAGES += \
-    KeyHandlerTrident
-
 # IPA
 PRODUCT_PACKAGES += \
     ipacm \
