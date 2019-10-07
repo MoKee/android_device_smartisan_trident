@@ -286,7 +286,11 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.gsma.services.nfc \
     com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
     libnqnfc-nci \
+    libnqnfc_nci_jni \
+    libsn100nfc_nci_jni \
+    libsn100nfc-nci \
     nfc_nci.nqx.default.hw \
     libnqp61-jcop-kit \
     NQNfcNci \
