@@ -21,7 +21,6 @@ import android.hardware.input.InputManager;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
-import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.InputDevice;
@@ -29,9 +28,9 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.ViewConfiguration;
 import android.view.WindowManager;
-import android.view.WindowManagerGlobal;
 
 import com.android.internal.os.DeviceKeyHandler;
+import com.android.internal.util.ScreenshotHelper;
 
 import mokee.providers.MKSettings;
 
@@ -53,6 +52,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private Context context;
     private PowerManager pm;
+    private ScreenshotHelper screenshotHelper;
 
     private boolean shortcutsKeyPressed = false;
     private boolean powerKeyPressed = false;
@@ -75,6 +75,7 @@ public class KeyHandler implements DeviceKeyHandler {
     public KeyHandler(Context context) {
         this.context = context;
         this.pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        this.screenshotHelper = new ScreenshotHelper(context);
     }
 
     public KeyEvent handleKeyEvent(KeyEvent event) {
@@ -173,11 +174,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 ? WindowManager.TAKE_SCREENSHOT_SELECTED_REGION
                 : WindowManager.TAKE_SCREENSHOT_FULLSCREEN;
 
-        try {
-            WindowManagerGlobal.getWindowManagerService().takeScreenshot(type);
-        } catch (RemoteException e) {
-            Log.e(TAG, "Error while trying to takeScreenshot.", e);
-        }
+        screenshotHelper.takeScreenshot(type, true, true, handler);
     }
 
     private class KeyInfo {
