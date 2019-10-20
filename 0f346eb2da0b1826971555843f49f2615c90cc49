@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher 2ECD2531 1571591314 +0800\npushee ssh://mokeedev.review:29418/MoKee/android_device_smartisan_trident\nnonce 1571591313-88E9B5336E1DA4A477A1B03EFB2BDD2CA1DB7E9F\n\n0000000000000000000000000000000000000000 0f346eb2da0b1826971555843f49f2615c90cc49 refs/for/mkq\n-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCgAdFiEE/Y8fKHw84zhHjhP78iL05i7NJTEFAl2slJIACgkQ8iL05i7N\nJTGn7wgArahhCmixQMqibNtg4lgxOqBF0T0KSr6ldA00kxGbJ+bdR4qQbEc1wh6/\nASwVLB1NgVaSQTeeV0N12MdDS9iy/6NHyZ0WOD89CHaIz+tsZRGIUzv1IGhxaaPp\nZYaJEjd9CMCOSjnnXFJc4B3+cUxugnSSOVHB9mOoevDdffjlwAzwRjhkjxqrJA8k\nGMY9PFN5cQWlTYQFRVKdj+irIfvANbWeRLD8k2JKEni3Q1dAjUmN8c0GjgcrKgbT\nWqIp5tsol3+gOvbZ3ZjqMu3ya0k3ag827KAea4qwQy1OQqIwT6S/F4wbDArYTUx1\nlp/qinOKBVIvwdRC/biX8Kr/YmxcUA\u003d\u003d\n\u003dpisJ\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
