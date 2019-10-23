@@ -65,16 +65,6 @@ NEED_KERNEL_MODULE_SYSTEM := true
 # HAX: SELinux Permissive - Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
-# A/B
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS += \
-    boot \
-    dtbo \
-    system \
-    vendor \
-    vbmeta
-
 # Audio
 USE_DEVICE_SPECIFIC_AUDIO := true
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -149,7 +139,6 @@ BUILD_WITHOUT_VENDOR := true
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
