@@ -1,0 +1,2 @@
+on property:sys.powerctl=reboot,recovery
+    exec - root root -- /vendor/bin/hw/slotswitcher
