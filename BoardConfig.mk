@@ -141,7 +141,6 @@ TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop $(DEVICE_PATH)/system_tident.pr
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
-BUILD_WITHOUT_VENDOR := true
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
